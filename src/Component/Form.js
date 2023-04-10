@@ -24,7 +24,7 @@ function Form() {
                         <div class="form-group">
                             <div class="input-group">
                                 <input type="text" class="form-control input-lg" placeholder="Enter Confirm Password"/>
-                            </div> 
+                            </div>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
