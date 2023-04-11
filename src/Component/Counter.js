@@ -22,7 +22,6 @@ export default class Count extends React.Component {
     render() {
         return (
             <>
-                <div id="counter">{this.props.title}</div>
                 <div id="counter">{this.state.count}</div>
                 <div className="button_group">
                     <button id="add" onClick={this.increment}>+</button>
