@@ -1,0 +1,62 @@
+$bg-white: #ffffff;
+$bg-black: #000000;
+$bg-red: #ff0000;
+$bg-lightgrey: #ff0000;
+$text-white: #ffffff;
+$text-black: #000000;
+$text-red: #ff0000;
+
+h1 {
+  margin: 0%;
+}
+
+.App {
+  text-align: center;
+  background-color: white;
+  color: $text-white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header {
+ background-color: darkblue;
+ padding: 8px;
+ width: 100%;
+ h1 {
+   color: $text-white;
+ }
+}
+
+.main {
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+ padding: 14px;
+}
+
+.form {
+ margin-top:15px; 
+}
+
+.data {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-top: 20px;
+ width: 100%;
+ color: black;
+}
+
+.data_view {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  h4 {
+    margin:0 !important;
+  }
+}
+
