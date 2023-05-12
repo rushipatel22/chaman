@@ -1,17 +1,19 @@
+import React from 'react';
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Login from "./Pages/Login";
+import Register from "./Pages/Register";
+import ForgotPassword from "./Pages/ForgotPassword";
 
-import './App.scss';
-import Header from './Component/header';
-import Todo from './Component/Todo';
-// import Form from './Component/Form';
-// import Counter from './Component/Counter';
-function App() {
+export default function App() {
   return (
-    <div className="App">
-        <Header />
-        {/* <Form /> */}
-        {/* <Counter countStart={0}/> */}
-        <Todo />
-    </div>
-  );
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" exact element={<Login />}></Route>
+          <Route path="/register" exact element={<Register />}></Route>
+          <Route path="/reset-password" exact element={<ForgotPassword />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </>
+  )
 }
-export default App;
